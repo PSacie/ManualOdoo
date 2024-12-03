@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - Contact</title>
+    <title>PokeManiac - Daily</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
     <!-- Load map styles -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    
 <!--
     
 TemplateMo 559 Zay Shop
@@ -70,13 +70,13 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">Módulos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="shop.html">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Daily</a>
                         </li>
                     </ul>
                 </div>
@@ -128,70 +128,90 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Content Page -->
     <div class="container-fluid bg-light py-5">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contact Us</h1>
+            <h1 class="h1">DAILY</h1>
             <p>
-                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet.
+                Progreso de la creación de nuestro manual de Bootstrap y Odoo en bootstrap.
             </p>
         </div>
     </div>
 
-    <!-- Start Map -->
-    <div id="mapid" style="width: 100%; height: 300px;"></div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script>
-        var mymap = L.map('mapid').setView([-23.013104, -43.394365, 13], 13);
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
-            attribution: 'Zay Telmplte | Template Design by <a href="https://templatemo.com/">Templatemo</a> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1
-        }).addTo(mymap);
-
-        L.marker([-23.013104, -43.394365, 13]).addTo(mymap)
-            .bindPopup("<b>Zay</b> eCommerce Template<br />Location.").openPopup();
-
-        mymap.scrollWheelZoom.disable();
-        mymap.touchZoom.disable();
-    </script>
-    <!-- Ena Map -->
-
-    <!-- Start Contact -->
-    <div class="container py-5">
-        <div class="row py-5">
-            <form class="col-md-9 m-auto" method="post" role="form">
-                <div class="row">
-                    <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Name</label>
-                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
-                    </div>
-                    <div class="form-group col-md-6 mb-3">
-                        <label for="inputemail">Email</label>
-                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
-                    </div>
+    <section class="intro">
+        <div class="gradient-custom-1 h-100">
+          <div class="mask d-flex align-items-center h-100">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <div class="table-responsive bg-white">
+                    <table class="table mb-0">
+                      <thead>
+                        <tr>
+                          <th scope="col">TAREA</th>
+                          <th scope="col">ESTADO</th>
+                          <th scope="col">ENCARGADO</th>
+                          <th scope="col">FECHA</th>
+                          <th scope="col">NOTAS</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Creación del Daily</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>18/11/2024</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Elección de plantilla y correo</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>20/11/2024</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Implementación de bootstrap y subida a github</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>22/11/2024</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Teoría</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>25/11/2024</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Teoría y creación de productos</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>26/11/2024</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Creación de empleados</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>27/11/2024</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Implementación Bootstrap</td>
+                          <td>Completado</td>
+                          <td>Pablo e Iván</td>
+                          <td>03/12/2024</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div class="mb-3">
-                    <label for="inputsubject">Subject</label>
-                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
-                </div>
-                <div class="mb-3">
-                    <label for="inputmessage">Message</label>
-                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
-                </div>
-                <div class="row">
-                    <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
-                    </div>
-                </div>
-            </form>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- End Contact -->
-
+      </section>
+    <!-- End Daily -->
 
     <!-- Start Footer -->
     <footer class="bg-dark" id="tempaltemo_footer">
