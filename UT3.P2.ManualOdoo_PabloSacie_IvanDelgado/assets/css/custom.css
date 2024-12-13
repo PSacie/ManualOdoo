@@ -39,3 +39,32 @@ img.rounded-circle {
 button:hover {
     background-color: #8b4a4a;
 }
+/* Cambios para las imagines del home */
+.col-md-4 img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-md-4 img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación para los encabezados */
+.col-md-4 h5, .col-md-4 h2 {
+    transition: color 0.3s ease;
+}
+
+.col-md-4:hover h5, .col-md-4:hover h2 {
+    color: #007bff;
+}
+/* Personalizar botones del acordeón */
+.custom-accordion-btn {
+    font-weight: bold; 
+    justify-content: center; 
+}
+
+/* Cambiar color al pasar el ratón */
+.custom-accordion-btn:hover {
+    color: white; 
+    background-color: #dc3545;
+}
