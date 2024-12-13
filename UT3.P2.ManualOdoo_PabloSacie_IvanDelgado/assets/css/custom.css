@@ -10,11 +10,32 @@ Custom Css
     width: 100%;
     z-index: 9999;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar una sombra para destacar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 body {
-    padding-top: 90px; /* Ajustar el contenido para que no quede debajo de la barra */
+    padding-top: 90px; /* Padding para que el navbar no tape el contenido */
 }
 .modal-dialog {
-    margin-top: 100px; /* Ajusta este valor según la altura de tu navbar */
+    margin-top: 100px; /* Altura del navbar */
+}
+
+/* Estilo para las imágenes circulares */
+img.rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Mantiene el contenido centrado y recortado si es necesario */
+    margin-bottom: 10px;
+}
+
+/* Contenedor para centrar los circulos del home */
+.row .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cambia el color al pasar por encima el ratón */
+button:hover {
+    background-color: #8b4a4a;
 }
